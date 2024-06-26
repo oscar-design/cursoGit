@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML>
+   <HEAD>
+      <TITLE>Gestion Tickets primera fase</TITLE>
+	  <link href="css/style.css" rel="stylesheet" type="text/css">
+   </HEAD>
+<BODY>
+
+    <div  class="contenedor" id="contenedor" style="display:inline-flex;">
+        <div class="bono" id="bono" style="display:block;width:100%;">
+        <table>
+            <tr style="height:10px;">
+                <td>
+                    <td><label id="ltipobono" style="width:100px;background-color:#5395CF;color:white;" for="tipobono"> &nbsp Tipo de bono : &nbsp </label></td>
+                    <td><label id="lpromocion" style="width:100px;background-color:#5395CF;color:white;" for="promocion"> &nbsp Promocion : &nbsp </label></td>
+                    <td><label id="lcatcierre" style="width:100px;background-color:#5395CF;color:white;" for="catcierre"> &nbsp Categoria de Cierre : &nbsp </label></td>
+                    <td><label id="lprocedeap" style="width:100px;background-color:#5395CF;color:white;" for="procedeap"> &nbsp Procede Apertura : &nbsp </label></td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <td><select id="tipobono" name="selectb">
+                        <option value="">Elige Opción</option>
+                        <option value="AJUSTE FACTURA">AJUSTE FACTURA</option>
+                        <option value="HRA">HRA</option>
+                        <option value="HRA/FACTURA">HRA/FACTURA</option>
+                        <option value="No Procede">No Procede</option></td>
+                    <td><select id="promocion" name="selectp">
+                        <option value="">Elige Opción</option>
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option></td>
+                    <td><select id="catcierre" name="selectcatc">
+                        <option value="">Elige Opción</option>
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option>
+                        <option value="PARCIALMENTE">PARCIALMENTE</option></td>
+                    <td><select id="procedeap" name="selectprap">
+                        <option value="">Elige Opción</option>
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option></td>
+                </td>
+            </tr>
+            <tr style="height:10px;">
+            </tr>
+            <tr>
+                <td>
+                    <td><label id="ltipolinea" style="width:100px;background-color:#5395CF;color:white;" for="tipolinea"> &nbsp Tipo de Linea : &nbsp </label></td>
+                    <td><label id="llineas" style="width:100px;background-color:#5395CF;color:white;" for="lineas"> &nbsp Selecciona la línea del cliente : &nbsp </label></td>
+                    <td><label id="lmotivoab" style="width:100px;background-color:#5395CF;color:white;" for="motivoab"> &nbsp Motivo del Abono : &nbsp </label></td>
+                    <td><label id="lsubcatcierre" style="width:100px;background-color:#5395CF;color:white;" for="subcatcierre"> &nbsp Subcategoría cierre : &nbsp </label></td>
+                </td>
+            </tr>
+            <tr style="height:10px;">
+            </tr>
+            <tr>
+                <td>
+                    <td><select id="tipolinea" name="selecttipol">
+                        <option value="">Elige Opción</option>
+                        <option value="MOVIL">MOVIL</option>
+                        <option value="FIJO">FIJO</option>
+                        <option value="INTERNET">INTERNET</option></td>
+        
+                    <td><select id="lineas" name="selectl">
+                        <option value="">Elige Opción</option>`)
+            
+                    </td>
+                    <td><select id="motivoab" name="selectmot">
+                            <option value="">Elige Opción</option>
+                            <option value="ERROR.APLICACION.OFERTA">ERROR.APLICACION.OFERTA</option>
+                            <option value="INCIDENCIA.DATOS">INCIDENCIA.DATOS</option>
+                            <option value="INCIDENCIA.LLAMADA">INCIDENCIA.LLAMADA</option>
+                            <option value="INCIDENCIA.SMS">INCIDENCIA.SMS</option>
+                            <option value="DESCUENTO.NO.APLICADO">DESCUENTO.NO.APLICADO</option>
+                            <option value="BONO.MAL.APLICADO">BONO.MAL.APLICADO</option>
+                            <option value="INCIDENCIA.CORTE.SERVICIO">INCIDENCIA.CORTE.SERVICIO</option>
+                            <option value="INCIDENCIA.BAJA.NO.REALIZADA">INCIDENCIA.BAJA.NO.REALIZADA</option>
+                            <option value="PENALIZACION.ERRONEA">PENALIZACION.ERRONEA</option>
+                            <option value="ABONO.COBRO.ERRONEO">ABONO.COBRO.ERRONEO</option>
+                            <option value="DESISTIMIENTO">DESISTIMIENTO</option>
+                            <option value="DESACUERDO.FINANCIACION">DESACUERDO.FINANCIACION</option>
+                            <option value="LAUDO">LAUDO</option></td>
+                        </td>
+                    <td><div id="subcat">
+                        <select id="subcatcierre" name="selectsubcatc">
+                        <option value="">Elige Opción</option>
+                        <option value="CONDICIONES MAL">CONDICIONES MAL</option>
+                        <option value="ERROR AGENTE">ERROR AGENTE</option>
+                        <option value="INCIDENCIA">INCIDENCIA</option>
+                        <option value="NO EVIDENCIAS">NO EVIDENCIAS</option>
+                        </div></td>
+                
+                </td>
+            </tr>
+            <tr style="height:10px;">
+            </tr>
+            <tr>
+                    <td>
+                        <td><label id="lfstart" style="width:100px;background-color:#5395CF;color:white;" for="fstart"> &nbsp Selecciona Factura Desde-Hasta : &nbsp</label></td>
+                
+                        <td><label id="lpconceptodev" style="width:100px;background-color:#5395CF;color:white;" for="conceptodev"> &nbsp Concepto a Devolver : &nbsp</label></td>
+        
+                        <td><label id="lpreciomes" style="width:100px;background-color:#5395CF;color:white;" for="preciomes"> &nbsp Precio al mes : &nbsp</label></td>
+                
+                        <td><label id="lpreciodifmes" style="width:100px;background-color:#5395CF;color:white;" for="preciodifmes"> &nbsp Precio diferente al mensual : &nbsp</label></td>
+                    </td>
+                
+            </tr>
+            <tr>
+                        <td>
+                        <td><select id="meses1" name="select">
+                        <option value="OP">Elige Més desde</option>
+                        <option value="00">Enero</option>
+                        <option value="01">Febrero</option>
+                        <option value="02">Marzo</option>
+                        <option value="03">Abril</option>
+                        <option value="04">Mayo</option>
+                        <option value="05">Junio</option>
+                        <option value="06">Julio</option>
+                        <option value="07">Agosto</option>
+                        <option value="08">Septiembre</option>
+                        <option value="09">Octubre</option>
+                        <option value="10">Noviembre</option>
+                        <option value="11">Diciembre</option>
+                        </select><input  type="text" class="textoyear" id ="textoyear1" placeholder="Año desde" style="width:95px;"/>
+                        </td>
+                    
+                        <td><div id="conceptodiv"><select id="conceptodev" name="selectsubcatc">
+                            <option value="">Elige Opción</option>
+                            <option value="Concepto1">Concepto1</option>
+                            <option value="Concepto2">Concepto2</option>
+                            <option value="Concepto3">Concepto3</option>
+                            <option value="Concepto4">Concepto4</option></div></td>
+                    
+                        <td><input type="text" id="preciomes" name="preciomes" style="width:80px;"></td>
+                    
+                        <td><input type="text" id="preciodifmes" name="preciodifmes"  style="width:200px;" ></td>
+                    </td>
+                    
+            </tr>
+            <tr style="height:10px;">
+            </tr>
+            <tr>
+                <td></td>
+                <td><select id="meses2" name="select">
+                <option value="OP">Elige Mes hasta</option>
+                <option value="00">Enero</option>
+                <option value="01">Febrero</option>
+                <option value="02">Marzo</option>
+                <option value="03">Abril</option>
+                <option value="04">Mayo</option>
+                <option value="05">Junio</option>
+                <option value="06">Julio</option>
+                <option value="07">Agosto</option>
+                <option value="08">Septiembre</option>
+                <option value="09">Octubre</option>
+                <option value="10">Noviembre</option>
+                <option value="11">Diciembre</option>
+                </select><input  type="text" class="textoyear" id ="textoyear2" placeholder="Año hasta" style="width:95px;margin-left:2px"/></td>
+            </tr>
+        
+            <tr>
+                <td>
+                <td><label id="lrecl" style="width:100px;background-color:#5395CF;color:white;" for="recl"> &nbsp Reclamación No Computable : &nbsp </label></td>
+                    <td><label id="ltipoap" style="width:100px;background-color:#5395CF;color:white;" for="tipoap"> &nbsp Tipo Apertura : &nbsp </label></td>
+                    <td><label id="ltabcomp" style="width:100px;background-color:#5395CF;color:white;" for="tabcom"> &nbsp Tabla Compensacion : &nbsp </label></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <td><select id="recl" name="selectsubcatc">
+                        <option value="">Elige Opción</option>
+                        <option value="SIN ACCION">SIN ACCION</option>
+                        <option value="NINGUNO">NINGUNO</option>
+                        <option value="EXCESIVO">EXCESIVO</option>
+                        <option value="NO CLIENTE">NO CLIENTE</option>
+                        <option value="DEFERENCIA">DEFERENCIA</option></td>
+                    <td><div id="seltipo"><select id="tipoap" name="selecttipol">
+                        <option value="">Elige Opción</option>
+                        <option value="ERROR SISTEMA">ERROR SISTEMA</option>
+                        <option value="IMPORTE ELEVADO">IMPORTE ELEVADO</option>
+                        <option value="SOLUCIONAR.FO">SOLUCIONAR.FO</option>
+                        </div></td>
+                    <td><select id="tabcom" name="selectsubcatc">
+                        <option value="">Elige Opción</option>
+                        <option value="CONDICIONES MAL">CONDICIONES MAL</option>
+                        <option value="ERROR AGENTE">ERROR AGENTE</option>
+                        <option value="INCIDENCIA">INCIDENCIA</option>
+                        <option value="NO EVIDENCIAS">NO EVIDENCIAS</option></td>
+                </td>
+            </tr>
+            <tr style="height:10px;">
+            </tr>
+            <tr>
+                    <td>
+                        <td><label id="limportehra" style="width:100px;background-color:#5395CF;color:white;" for="importehra"> &nbsp Importe HRA : &nbsp</label><label style="margin-left:40px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><label id="limportedes" style="width:100px;background-color:#5395CF;color:white;" for="importedes"> &nbsp Importe Descuento : &nbsp</label></td>
+                    </td>
+                    <td>
+                        <td><label id="lhistorial" style="background-color:#5395CF;color:white;" for="historial"> &nbsp&nbsp&nbsp Hitorial : &nbsp&nbsp&nbsp</label></td>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <td><input type="text" id="importehra" name="importehra" ><input type="text" id="importedes" name="importedes"></td>
+                    <td><label id="lfactura" style="width:100px;background-color:#5395CF;color:white;margin-left:50px;" for="importe"> &nbsp Factura : &nbsp</label></td>
+                    <td><label id="llinea" style="width:100px;background-color:#5395CF;color:white;margin-left:15px;" for="linea"> &nbsp Linea : &nbsp</label></td>
+                    <td><label id="lconcepto" style="width:100px;background-color:#5395CF;color:white;margin-left:15px;" for="concepto"> &nbsp Concepto : &nbsp</label></td>
+                    <td><label id="ldevolucion" style="width:100px;background-color:#5395CF;color:white;margin-left:15px;" for="devolucio"> &nbsp Devolucion : &nbsp</label></td>
+                
+            
+                </td>
+            
+            </tr>
+            
+            <tr>
+                    <tr>
+                    <td>
+                        <td><input style="background-color:#5AB0E2;color:white;font-weight:bold;margin-left:200px;" type="button" class="btngestion" id ="btnanadir" value="Añadir"></td>
+                    
+                    </td>
+                    </tr>
+                    
+                
+            </tr>
+            
+        
+            <tr style="height:10px;">
+            </tr>  
+        </table>
+        <div  id='divnueva'>
+                
+        
+                <table id='tableadd'>
+                
+                
+                
+                
+                </table>
+        
+        
+        </div>
+        <div style="position:relative;left: 15%;">
+            <div>
+                <label id="lcomentarios" style="width:100px;background-color:#5395CF;color:white;" for="comentarios"> &nbsp Comentarios : &nbsp</label>
+            </div>
+            <div>
+                <textarea id="comentarios" name="comentarios" rows="6" cols="120"></textarea>
+            </div>
+        </div>
+        <div class="gestion" id="gestion"  style="display:inline;">
+            <table style="position: relative;left: 25%;">
+            <tr>
+                <td class="btnG"><input style="background-color:#5AB0E2;color:white; font-weight:bold;width:150%;" type="button" class="btngestion" id ="btngestion" value="Guardar Comentarios" /></td>
+            </tr>
+            </table>
+        </div>
+        
+        </div></div>
+    </BODY>
+</HTML>
